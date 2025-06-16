@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List with Countdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+
+    <div class="input-section">
+      <label for="taskInput"><strong>Task</strong></label>
+      <input type="text" id="taskInput" placeholder="Enter task" />
+
+      <label for="startInput"><strong>Start Date & Time</strong></label>
+      <input type="datetime-local" id="startInput" />
+
+      <label for="deadlineInput"><strong>Deadline Date & Time</strong></label>
+      <input type="datetime-local" id="deadlineInput" />
+
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <button class="export-btn" onclick="exportToExcel()">📤 Export to Excel</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  background: #a3ffa3;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  color: #530dad;
+  margin-bottom: 25px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #df5d59;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f3b509;
+  color: black;
+}
+
+.task-list {
+  margin-top: 25px;
+}
+
+.task {
+  background: #ffffff;
+  border: 2px solid #2e8b57;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.task:hover {
+  background-color: #f4fff4;
+  transform: scale(1.01);
+}
+
+.task p {
+  font-size: 1rem;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.task .label {
+  font-weight: 600;
+  color: #444;
+}
+
+.task .countdown {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.task.completed {
+  background: #eaffea;
+  border-color: #28a745;
+}
+
+.task.completed .countdown {
+  color: #28a745;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-group button:hover {
+  background: #0056b3;
+}
+
+.btn-group button:last-child {
+  background: #28a745;
+}
+
+.btn-group button:last-child:hover {
+  background: #1e7e34;
+}
+
+.export-btn {
+  margin-top: 20px;
+  background: #ffc107;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.export-btn:hover {
+  background: #e0a800;
+}
+
+@media (max-width: 600px) {
+  .btn-group {
+    flex-direction: column;
+  }
+}
